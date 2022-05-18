@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="./assets/img/icons/favicon.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--=============== SLICK CSS ===============-->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="./assets/css/styles.css">
+
+        <title>Mollen</title>
+    </head>
+    <body class="body">
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <!-- Search bar -->
+            <div class="header__search search">
+                <input type="search" name="search" id="search" placeholder="НАЗВАНИЕ ТОВАРА">
+                <button class="search__close search-btn">
+                    <i class="ri-close-fill center"></i>
+                </button>
+            </div>
+
+            <div class="header__container container">
+                <div class="header__left">
+                    <button class="header__menu-btn menu-button">
+                        <i class='bx bx-dots-horizontal-rounded menu-button__icon'></i>
+                    </button>
+                    <a href="#" class="header__logo-wrap">
+                        <img src="./assets/img/logo-light.png" alt="logo" class="header__logo-light">
+                        <img src="./assets/img/logo-dark.png" alt="logo" class="header__logo-dark">
+                    </a>
+                    <a href="#" class="header__item header-catalog">Каталог</a>
+                </div>
+                <div class="header__right">
+                    <button class="header__item light-item search-btn search-btn-hidden">
+                        <i class="ri-search-line search-icon"></i>
+                        поиск
+                    </button>
+                    <a href="#" class="header__item light-item">
+                        <img src="./assets/img/icons/constructor-icon.svg" alt="item-icon" class="header__icon">
+                        конструктор
+                    </a>
+                    <button class="header__item light-item search-btn search-hidden">
+                        <i class="ri-search-line search-icon"></i>
+                    </button>
+                    <a href="#" class="header__item cart-btn">
+                        <img src="./assets/img/icons/cart-icon.svg" alt="cart-icon" class="card-btn__icon center">
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!--==================== MENU ====================-->
+        <div class="menu">
+            <div class="menu__inner">
+                <div class="menu__sidebar sidebar">
+                    <div class="sidebar__top">
+                        <button class="sidebar__close-btn menu-button">
+                            <i class="ri-close-fill"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar__middle">
+                        <h2 class="sidebar__title menu-title">Меню</h2>
+                        <nav class="sidebar__nav">
+                            <ul class="sidebar__list">
+                                <li class="sidebar__item">
+                                    <a href="#" class="sidebar__item-link">Размерный гид</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a href="#" class="sidebar__item-link">Доставка и оплата</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a href="#" class="sidebar__item-link">Гарантия и возврат </a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a href="#" class="sidebar__item-link">Частые вопросы</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a href="#" class="sidebar__item-link">О бренде</a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a href="#" class="sidebar__item-link">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="sidebar__bottom">
+                        <ul class="sidebar__socials">
+                            <li class="sidebar__social-link">
+                                <a href="https://vk.com" target="_blank"><i class="bx bxl-vk social-icon"></i></a>
+                            </li>
+                            <li class="sidebar__social-link">
+                                <a href="https://pinterest.com" target="_blank"><i class='bx bxl-pinterest-alt social-icon'></i></a>
+                            </li>
+                            <li class="sidebar__social-link">
+                                <a href="https://telegram.me" target="_blank"><i class='bx bxl-telegram social-icon' ></i></a>
+                            </li>
+                            <li class="sidebar__social-link">
+                                <a href="https://facebook.com" target="_blank"><i class='bx bxl-facebook social-icon'></i></a>
+                            </li>
+                            <li class="sidebar__social-link">
+                                <a href="https://youtube.com" target="_blank"><i class='bx bxl-youtube social-icon' ></i></a>
+                            </li>
+                            <li class="sidebar__social-link">
+                                <a href="https://instagram.com" target="_blank"><i class='bx bxl-instagram social-icon' ></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu__content content">
+                    <div class="content__top">
+                        <img src="./assets/img/logo-dark.png" alt="logo" class="content__body-logo">
+                        <button class="content__body-search search-btn menu-button">
+                            <i class="ri-search-line search-icon"></i>
+                        </button>
+                    </div>
+                    <div class="content__middle">
+                        <div class="content__inner-wrap">
+                            <h2 class="content__title menu-title">Категории Mollen</h2>
+                            <ul class="content__list">
+                                <li class="content__item">
+                                    <a href="#" class="content__item-link">постельное белье</a>
+                                </li>
+                                <li class="content__item">
+                                    <a href="#" class="content__item-link">одежда</a>
+                                </li>
+                                <li class="content__item">
+                                    <a href="#" class="content__item-link">Ароматы</a>
+                                </li>
+                                <li class="content__item">
+                                    <a href="#" class="content__item-link">Аксессуары</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content__bottom content-bottom">
+                        <div class="content-bottom__inner">
+                            <span class="content-bottom__phone">8 800 222 22 22</span>
+                            <a href="tel:88002222222" class="content-bottom__call-btn contacts__call-btn">Заказать звонок</a>
+                        </div>
+                        <button class="content-bottom__btn">
+                            <img src="./assets/img/icons/furniture-icon.svg" alt="furniture-icon">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <h1 class="heading-hidden visually-hidden">home</h1>
+                <ul class="home__points">
+                    <li class="home__point point">
+                        <span class="point__dot"></span> одежда
+                    </li>
+                    <li class="home__point point">
+                        <span class="point__dot"></span> принты
+                    </li>
+                    <li class="home__point point">
+                        <span class="point__dot"></span> постельное белье
+                    </li>
+                    <li class="home__point point">
+                        <span class="point__dot"></span> Ароматы
+                    </li>
+                    <li class="home__point point">
+                        <span class="point__dot"></span> комплекты
+                    </li>
+                </ul>
+                <a href="#constructor" class="home__scroll-btn">
+                    <img src="./assets/img/icons/spinner.png" alt="fan-icon" class="fan-icon">
+                </a>
+            </section>
+
+            <!--==================== CATEGORY ====================-->
+            <section class="category section" id="category">
+                <h1 class="heading-hidden visually-hidden">category</h1>
+                <div class="category__container">
+                    <ul class="category__list">
+                        <li class="category__item">
+                            <a href="#" class="category__item-link">
+                                <div class="category__item-inner">
+                                    <span class="category__badge badge-top">для детей</span>
+                                    <img src="./assets/img/category-img1.jpg" alt="category-image" class="category__item-image">
+                                </div>
+                                <h3 class="category__item-title">
+                                    В незапамятные времена наши предки-славяне называли 
+                                </h3>
+                            </a>
+                        </li>
+                        <li class="category__item">
+                            <a href="#" class="category__item-link">
+                                <div class="category__item-inner">
+                                    <span class="category__badge badge-left-bottom">для детей</span>
+                                    <img src="./assets/img/category-img2.jpg" alt="category-image" class="category__item-image">
+                                </div>
+                                <h3 class="category__item-title">
+                                    В незапамятные времена наши предки-славяне называли 
+                                </h3>
+                            </a>
+                        </li>
+                        <li class="category__item">
+                            <a href="#" class="category__item-link">
+                                <div class="category__item-inner">
+                                    <span class="category__badge discount-badge badge-bottom">-20%</span>
+                                <img src="./assets/img/category-img3.jpg" alt="category-image" class="category__item-image">
+                            </div>
+                            <h3 class="category__item-title">
+                                В незапамятные времена наши предки-славяне называли 
+                            </h3>
+                        </a>
+                        </li>
+                        <li class="category__item">
+                            <a href="#" class="category__item-link">
+                                <div class="category__item-inner">
+                                    <span class="category__badge badge-top">для дома</span>
+                                <img src="./assets/img/category-img4.jpg" alt="category-image" class="category__item-image">
+                            </div>
+                            <h3 class="category__item-title">
+                                В незапамятные времена наши предки-славяне называли 
+                            </h3>
+                        </a>
+                        </li>
+                        <li class="category__item">
+                            <a href="#" class="category__item-link">
+                                <div class="category__item-inner">
+                                    <span class="category__badge badge-top">для детей</span>
+                                <img src="./assets/img/category-img1.jpg" alt="category-image" class="category__item-image">
+                            </div>
+                            <h3 class="category__item-title">
+                                В незапамятные времена наши предки-славяне называли 
+                            </h3>
+                        </a>
+                        </li>
+                        <li class="category__item">
+                            <a href="#" class="category__item-link">
+                                <div class="category__item-inner">
+                                    <span class="category__badge badge-left-bottom">для детей</span>
+                                <img src="./assets/img/category-img2.jpg" alt="category-image" class="category__item-image">
+                            </div>
+                            <h3 class="category__item-title">
+                                В незапамятные времена наши предки-славяне называли 
+                            </h3>
+                        </a>
+                        </li>
+                        <li class="category__item">
+                            <a href="#" class="category__item-link">
+                                <div class="category__item-inner">
+                                    <span class="category__badge discount-badge badge-bottom">-20%</span>
+                                <img src="./assets/img/category-img3.jpg" alt="category-image" class="category__item-image">
+                            </div>
+                            <h3 class="category__item-title">
+                                В незапамятные времена наши предки-славяне называли 
+                            </h3>
+                        </a>
+                        </li>
+                        <li class="category__item">
+                            <a href="#" class="category__item-link">
+                                <div class="category__item-inner">
+                                    <span class="category__badge badge-top">для дома</span>
+                                <img src="./assets/img/category-img4.jpg" alt="category-image" class="category__item-image">
+                            </div>
+                            <h3 class="category__item-title">
+                                В незапамятные времена наши предки-славяне называли 
+                            </h3>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--==================== CONTSRUCTOR ====================-->
+            <section class="construct section" id="constructor">
+                <h1 class="heading-hidden visually-hidden">constructor</h1>
+                <div class="construct__container section__container">
+                    <div class="construct__left section__left">
+                        <h2 class="construct__title section__title">
+                            Собери свой комплект на конструкторе
+                        </h2>
+                        <button class="construct__btn button">собрать</button>
+                    </div>
+                    <div class="construct__right section__right">
+                        <ul class="construct__card-list">
+                            <li class="construct__card-item">
+                                <a href="#" class="construct__card-link">
+                                    <div class="constuct__card card">
+                                        <div class="card__header">
+                                            <span class="card__category">комплект</span>
+                                            <img src="./assets/img/icons/spinner-blue.png" alt="card-icon" class="card__icon">
+                                        </div>
+                                        <img src="./assets/img/card-img.jpg" alt="card-image" class="card__image">
+                                        <h3 class="card__title">
+                                            название комплекта
+                                            в две строки
+                                        </h3>
+                                        <span class="card__discount">>5 шт – 16 000₽/шт</span>
+                                        <span class="card__price">15 000 ₽</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="construct__card-item">
+                                <a href="#" class="construct__card-link">
+                                    <div class="constuct__card card">
+                                        <div class="card__header">
+                                            <span class="card__category">комплект</span>
+                                            <img src="./assets/img/icons/spinner-blue.png" alt="card-icon" class="card__icon">
+                                        </div>
+                                        <img src="./assets/img/card-img.jpg" alt="card-image" class="card__image">
+                                        <h3 class="card__title">
+                                            название комплекта
+                                            в две строки
+                                        </h3>
+                                        <span class="card__discount">>5 шт – 16 000₽/шт</span>
+                                        <span class="card__price">15 000 ₽</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="construct__card-item">
+                                <a href="#" class="construct__card-link">
+                                    <div class="constuct__card card">
+                                        <div class="card__header">
+                                            <span class="card__category">комплект</span>
+                                            <img src="./assets/img/icons/spinner-blue.png" alt="card-icon" class="card__icon">
+                                        </div>
+                                        <img src="./assets/img/card-img.jpg" alt="card-image" class="card__image">
+                                        <h3 class="card__title">
+                                            название комплекта
+                                            в две строки
+                                        </h3>
+                                        <span class="card__discount">>5 шт – 16 000₽/шт</span>
+                                        <span class="card__price">15 000 ₽</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="construct__card-item">
+                                <a href="#" class="construct__card-link">
+                                    <div class="constuct__card card">
+                                        <div class="card__header">
+                                            <span class="card__category">комплект</span>
+                                            <img src="./assets/img/icons/spinner-blue.png" alt="card-icon" class="card__icon">
+                                        </div>
+                                        <img src="./assets/img/card-img.jpg" alt="card-image" class="card__image">
+                                        <h3 class="card__title">
+                                            название комплекта
+                                            в две строки
+                                        </h3>
+                                        <span class="card__discount">>5 шт – 16 000₽/шт</span>
+                                        <span class="card__price">15 000 ₽</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CATALOG ====================-->
+            <section class="catalog section" id="catalog">
+                <h1 class="heading-hidden visually-hidden">catalog</h1>
+                <div class="catalog__container section__container">
+                    <div class="catalog__left section__left">
+                        <div class="catalog__inner-wrap">
+                            <div class="catalog__title section__title">
+                                КАталог <br>
+                                Mollen
+                            </div>
+                            <ul class="catalog__list">
+                                <li class="catalog__list-item">
+                                    <a href="#">постельное</a>
+                                </li>
+                                <li class="catalog__list-item">
+                                    <a href="#">одежда</a>
+                                </li>
+                                <li class="catalog__list-item">
+                                    <a href="#">Аксессуары</a>
+                                </li>
+                                <li class="catalog__list-item">
+                                    <a href="#">Ароматы</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="catalog__infos">
+                            <p class="catalog__paragraph">
+                                “При выборе варианта оплаты наличными, 
+                                вы дожидаетесь приезда курьера и 
+                                передаёте ему сумму за товар в рублях. 
+                                Курьер предоставляет товар, который 
+                                можно осмотреть на предмет повреждений, 
+                                соответствие указанным условиям. 
+                            </p>
+                            <p class="catalog__paragraph">
+                                “При выборе варианта оплаты наличными, 
+                                вы дожидаетесь приезда курьера и 
+                                передаёте ему сумму за товар в рублях. 
+                                Курьер предоставляет товар, который 
+                                можно осмотреть на предмет повреждений, 
+                                соответствие указанным условиям. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="catalog__right section__right">
+                        <img src="./assets/img/reverse2.jpg" alt="image" class="catalog__image">
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CAROUSEL ====================-->
+            <section class="carousel section" id="carousel">
+                <h1 class="heading-hidden visually-hidden">carousel</h1>
+                <div class="carousel__container">
+                    <ul class="carousel__list">
+                        <li class="carousel__item">
+                            <a href="#" class="carousel__link">
+                                <img src="./assets/img/slider-img1.jpg" alt="carousel-image">
+                            </a>
+                        </li>
+                        <li class="carousel__item">
+                            <a href="#" class="carousel__link">
+                                <img src="./assets/img/slider-img2.jpg" alt="carousel-image">
+                            </a>
+                        </li>
+                        <li class="carousel__item">
+                            <a href="#" class="carousel__link">
+                                <img src="./assets/img/slider-img3.jpg" alt="carousel-image">
+                            </a>
+                        </li>
+                        <li class="carousel__item">
+                            <a href="#" class="carousel__link">
+                                <img src="./assets/img/slider-img1.jpg" alt="carousel-image">
+                            </a>
+                        </li>
+                        <li class="carousel__item">
+                            <a href="#" class="carousel__link">
+                                <img src="./assets/img/slider-img2.jpg" alt="carousel-image">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container">
+                <div class="footer__columns">
+                    <div class="footer__copyright footer-column">
+                        <a href="#" class="footer__logo-link">
+                            <img src="./assets/img/logo-dark.png" alt="logo" class="footer__logo">
+                        </a>
+                        <span class="footer__copy">
+                            2021 &copy; Mollen. <br>
+                            Все права защищены
+                        </span>
+                    </div>
+                    <ul class="footer__list footer-column">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">Постельное белье</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">Одежда</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">Ароматы</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">Аксессуары</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list footer-column">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">Размерный гид</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">Доставка и оплата</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">Гарантия и возврат </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__item-link">Частые вопросы</a>
+                        </li>
+                    </ul>
+                    <div class="footer__contacts contacts footer-column">
+                        <a href="#" class="footer__logo-link">
+                            <img src="./assets/img/logo-dark.png" alt="logo" class="footer__logo">
+                        </a>
+                        <div class="contacts__info">
+                            <span class="contacts__phone">8 800 222 22 22</span>
+                            <a href="tel:88002222222" class="contacts__call-btn">Заказать звонок</a>
+                        </div>
+                        <ul class="contacts__socials">
+                            <li class="contacts__social-link">
+                                <a href="https://vk.com" target="_blank"><i class="bx bxl-vk social-icon"></i></a>
+                            </li>
+                            <li class="contacts__social-link">
+                                <a href="https://pinterest.com" target="_blank"><i class='bx bxl-pinterest-alt social-icon'></i></a>
+                            </li>
+                            <li class="contacts__social-link">
+                                <a href="https://telegram.me" target="_blank"><i class='bx bxl-telegram social-icon' ></i></a>
+                            </li>
+                            <li class="contacts__social-link">
+                                <a href="https://facebook.com" target="_blank"><i class='bx bxl-facebook social-icon'></i></a>
+                            </li>
+                            <li class="contacts__social-link">
+                                <a href="https://youtube.com" target="_blank"><i class='bx bxl-youtube social-icon' ></i></a>
+                            </li>
+                            <li class="contacts__social-link">
+                                <a href="https://instagram.com" target="_blank"><i class='bx bxl-instagram social-icon' ></i></a>
+                            </li>
+                        </ul>
+                        <span class="footer__copy">
+                            2021 &copy; Mollen. Все права защищены
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--=============== JQUERY ===============-->
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+        <!--=============== SLICK JS ===============-->
+        <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>
